@@ -55,3 +55,7 @@ section[id] {
 .loader-underline {
   transform: scaleX(0);
 }
+
+.hero-code-card {
+  transform-style: preserve-3d;
+}

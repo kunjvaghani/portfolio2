@@ -106,7 +106,7 @@ export default function Navbar() {
               VK
               <span className="absolute inset-0 rounded-xl bg-cyan-400/10 opacity-0 blur-md transition-opacity group-hover:opacity-100" />
             </span>
-            <span className="hidden font-mono text-xs uppercase tracking-[0.2em] text-zinc-500 sm:block">
+            <span className="hidden font-mono text-xs uppercase tracking-[0.2em] text-zinc-500 sm:block ">
               Kunj Vaghani
             </span>
           </Link>

@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar/Navbar";
 import PortfolioShell from "@/components/loader/PortfolioShell";
+import Hero from "@/components/hero/Hero";
 
 export default function Home() {
   return (
@@ -7,15 +8,7 @@ export default function Home() {
       <Navbar />
 
       <main className="relative">
-        {/* Placeholder sections — hero, about, etc. will be built next */}
-        <section
-          id="home"
-          className="flex min-h-screen items-center justify-center px-6 pt-28"
-        >
-          <p className="font-display text-4xl text-zinc-500 sm:text-6xl">
-            Hero — coming next
-          </p>
-        </section>
+        <Hero />
 
         <section
           id="about"
