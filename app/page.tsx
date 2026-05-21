@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar/Navbar";
 import PortfolioShell from "@/components/loader/PortfolioShell";
 import Hero from "@/components/hero/Hero";
+import About from "@/components/about/About";
 
 export default function Home() {
   return (
@@ -10,12 +11,7 @@ export default function Home() {
       <main className="relative">
         <Hero />
 
-        <section
-          id="about"
-          className="flex min-h-screen items-center justify-center border-t border-white/5 px-6"
-        >
-          <p className="font-display text-3xl text-zinc-600">About</p>
-        </section>
+        <About />
 
         <section
           id="projects"

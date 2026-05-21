@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111118"/>
+      <stop offset="100%" stop-color="#0a0b10"/>
+    </linearGradient>
+    <linearGradient id="silhouette" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#3f3f46"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="480" rx="24" fill="url(#bg)"/>
+  <rect x="8" y="8" width="384" height="464" rx="20" stroke="url(#accent)" stroke-width="1" fill="none"/>
+  <ellipse cx="200" cy="175" rx="72" ry="78" fill="url(#silhouette)"/>
+  <path d="M80 420 C80 320 130 280 200 280 C270 280 320 320 320 420 L320 480 L80 480 Z" fill="url(#silhouette)"/>
+  <text x="200" y="440" text-anchor="middle" fill="#52525b" font-family="system-ui,sans-serif" font-size="14" letter-spacing="0.15em">PHOTO COMING SOON</text>
+</svg>

@@ -58,4 +58,5 @@ section[id] {
 
 .hero-code-card {
   transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
