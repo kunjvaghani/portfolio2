@@ -1,0 +1,132 @@
+website design strucuture : 
+                    - Futuristic
+                    - Premium
+                    - Interactive
+                    - Minimal but powerful
+                    - Motion-rich UI
+                    - Performance-first
+                    - Developer aesthetic
+
+instruction(you have to follow ) : whole website is single page website. there should be only one homepage. 
+              we have already provided option in navbar when user click on any of the option user go to that part like 
+              we have first navbar than hero seciton  than abour section than contact section if user click on contact in navbar user will go to contact section and if user click on about user will go to about section and so on.
+              do not render another webpage. it is single page website. also make sure to add smooth scrolling effect when user click on any of the navbar option it should scroll smoothly to that section. to add active state in navbar when user scrolls to that section the corresponding navbar option should be highlighted to indicate which section user is currently viewing. 
+               , to add responsive design and make sure it looks good on all devices. add some animation effects to make it more interactive and visually appealing ,  to optimize the website for performance and SEO. also make sure to add meta tags and other necessary tags for better SEO. 
+               
+0. loader
+when user refresh our website one animation will come in format of "VK" with some animation effects and after that it will disappear and user will see the homepage of the website.
+
+1. navbar 
+it includes options like : home about contact projects skills resume 
+
+2. hero section
+Hero Layout                 : Split screen design.(left and right side)
+opening line                : "Hi, I'm Kunj Vaghani" "welcome to my portfolio"
+
+left side :
+    it includes subheading, call to action button and social media links , CTA buttons.
+    heading : KUNJ PORTFOLIO
+    skills name : Full Stack Developer , AI\ML Enthusiast, Data Science , 
+
+    description         : Full Stack Developer specializing in AI integrations, scalable backend systems, 
+                          and modern interactive frontend experiences.
+    social meida links  : github linkedin twitter 
+    CTA buttons         : view projects and contact me
+
+right side : 
+    - Animated developer code editor card
+    - Floating effects
+    - Glow effects    
+
+        ## Hero Code Card
+
+        ```ts
+        const developer = {
+        name: "Kunj Vaghani",
+        role: "Full Stack Developer",
+        focus: ["AI", "Backend", "Frontend"],
+        stack: ["Next.js", "Node.js", "MongoDB"],
+        passion: true
+        }
+        ```
+
+
+3. about section
+
+layout : two column layout with image on one side and text on the other side
+
+left side : 
+         - profile image with floating and glow effects
+
+right side : 
+        who am i ? 
+            my name , college name , year  , degree , skills , experience
+            description : I am a passionate full stack developer with a strong focus on AI integrations, scalable backend systems, and modern interactive frontend experiences. With a solid foundation in computer science and hands-on experience in various projects, I have honed my skills in both frontend and backend development. 
+            I am dedicated to creating innovative solutions that leverage the power of AI to enhance user experiences and drive business growth. My expertise includes working with technologies such as Next.js, Node.js, MongoDB, and various AI frameworks. I am eager to contribute my skills and passion to impactful projects 
+            that push the boundaries of technology.
+
+        current focus ? 
+            Building scalable backends, REST APIs & ML integrations
+            AI ML
+            include rag pipelines , embeddings , vector databases , langchain , openai api
+            focus on ai agents
+            strong urge in AWS and cloud deployment.
+
+
+        why me ?
+
+        Education details : 
+            - college name , degree , year of graduation
+
+4. projects section
+layout : grid layout with project cards
+project card :
+    - project image
+    - project title
+    - project description
+    - technologies used
+    - links to github and live demo
+
+5. skills section
+layout : grid layout with skill cards
+types of skills : CORE CS(DSA OOP , OS , CN , DBMS ) , frontend(HTML , CSS , JavaScript , React , Next.js , Tailwind CSS , framer motion ) , backend(node.js , express , mongodb , mysql, supabase , prisma orm and etc) , 
+                  ai/ml() , languages(c c++ python SQL javascript ) , cloud&devops&tools(git github docker postman vscode linux and etc)
+
+skill card : (make sure to make it catergory wise which is mentioned above in skill section)
+    - there should be one box in which skill logo after that skill name when we hover on that box it should show the description of that skill and also add some animation effects to make it more interactive and visually appealing.
+    - skill name
+    - skill logo like for example for react it will be react logo , for next.js it will be next.js logo and for all others skills.
+
+
+6. contact section
+Layout :
+        Split screen design.
+
+Left Side : 
+     - email
+     - location
+     - linkedin link
+     - leetcode
+     - codeforces
+     - gfg 
+     - codechef
+     - github link 
+
+Right Side : 
+     - Contact form
+
+        Form Fields
+        - Name
+        - Email
+        - subject
+        - Message
+        - send button
+
+7. footer section
+    make according to the theme of the website and include links to social media profiles and copyright information.
+    also add responsive design and make sure it looks good on all devices.
+    resume download link(when user clicks on it, it should download the resume in pdf format)
+    - Availability indicator
+
+
+
