@@ -1,8 +1,9 @@
 import Navbar from "@/components/navbar/Navbar";
+import PortfolioShell from "@/components/loader/PortfolioShell";
 
 export default function Home() {
   return (
-    <>
+    <PortfolioShell>
       <Navbar />
 
       <main className="relative">
@@ -44,6 +45,6 @@ export default function Home() {
           <p className="font-display text-3xl text-zinc-600">Contact</p>
         </section>
       </main>
-    </>
+    </PortfolioShell>
   );
 }

@@ -51,3 +51,7 @@ body::before {
 section[id] {
   scroll-margin-top: 6rem;
 }
+
+.loader-underline {
+  transform: scaleX(0);
+}

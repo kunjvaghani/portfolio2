@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { NAV_ITEMS, SECTION_IDS } from "@/lib/navigation";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import { useLoaderComplete } from "@/context/LoaderContext";
 
 function scrollToSection(sectionId: string) {
   const el = document.getElementById(sectionId);
@@ -19,6 +20,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const activeSection = useActiveSection(SECTION_IDS);
+  const isLoaderComplete = useLoaderComplete();
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 24);
@@ -28,7 +30,7 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (!navRef.current) return;
+    if (!navRef.current || !isLoaderComplete) return;
 
     const ctx = gsap.context(() => {
       gsap.from(navRef.current, {
@@ -36,7 +38,7 @@ export default function Navbar() {
         opacity: 0,
         duration: 1,
         ease: "power3.out",
-        delay: 0.15,
+        delay: 0.1,
       });
 
       gsap.from(".nav-link", {
@@ -45,12 +47,12 @@ export default function Navbar() {
         duration: 0.6,
         stagger: 0.06,
         ease: "power2.out",
-        delay: 0.35,
+        delay: 0.25,
       });
     }, navRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [isLoaderComplete]);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
