@@ -1,0 +1,41 @@
+/** Brand hex colors for Simple Icons (without #) */
+export const SKILL_BRAND_COLORS: Record<string, string> = {
+  html5: "E34F26",
+  css3: "1572B6",
+  javascript: "F7DF1E",
+  react: "61DAFB",
+  nextdotjs: "FFFFFF",
+  tailwindcss: "06B6D4",
+  framer: "0055FF",
+  nodedotjs: "339933",
+  express: "FFFFFF",
+  mongodb: "47A248",
+  mysql: "4479A1",
+  supabase: "3FCF8E",
+  prisma: "2D3748",
+  python: "3776AB",
+  langchain: "1C3C3C",
+  openai: "412991",
+  huggingface: "FFD21E",
+  scikitlearn: "F7931E",
+  tensorflow: "FF6F00",
+  c: "A8B9CC",
+  cplusplus: "00599C",
+  postgresql: "4169E1",
+  git: "F05032",
+  github: "FFFFFF",
+  docker: "2496ED",
+  postman: "FF6C37",
+  visualstudiocode: "007ACC",
+  linux: "FCC624",
+  fastapi: "109997",
+};
+
+/** Colors for custom Core CS icons */
+export const CORE_CS_COLORS: Record<string, string> = {
+  DSA: "F59E0B",
+  OOP: "A78BFA",
+  OS: "22D3EE",
+  CN: "34D399",
+  DBMS: "60A5FA",
+};

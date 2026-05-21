@@ -2,6 +2,8 @@ import Navbar from "@/components/navbar/Navbar";
 import PortfolioShell from "@/components/loader/PortfolioShell";
 import Hero from "@/components/hero/Hero";
 import About from "@/components/about/About";
+import Projects from "@/components/projects/Projects";
+import Skills from "@/components/skills/Skills";
 
 export default function Home() {
   return (
@@ -13,19 +15,8 @@ export default function Home() {
 
         <About />
 
-        <section
-          id="projects"
-          className="flex min-h-screen items-center justify-center border-t border-white/5 px-6"
-        >
-          <p className="font-display text-3xl text-zinc-600">Projects</p>
-        </section>
-
-        <section
-          id="skills"
-          className="flex min-h-screen items-center justify-center border-t border-white/5 px-6"
-        >
-          <p className="font-display text-3xl text-zinc-600">Skills</p>
-        </section>
+        <Projects />
+        <Skills />
 
         <section
           id="contact"
