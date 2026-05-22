@@ -31,7 +31,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative border-t border-white/5 px-4 py-24 sm:px-6 lg:px-10 lg:py-32"
+      className="section-wrap section-wrap-lg-gap relative border-t border-white/5 px-4 sm:px-6 lg:px-10"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <div className="absolute left-1/3 bottom-0 h-72 w-72 rounded-full bg-cyan-500/[0.05] blur-[90px]" />
@@ -56,7 +56,7 @@ export default function Contact() {
           </h2>
         </motion.div>
 
-        <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
+        <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10">
           {/* Left — contact info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}

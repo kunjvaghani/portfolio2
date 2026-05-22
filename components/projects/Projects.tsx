@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative border-t border-white/5 px-4 py-24 sm:px-6 lg:px-10 lg:py-32"
+      className="section-wrap section-wrap-lg-gap relative border-t border-white/5 px-4 sm:px-6 lg:px-10"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <div className="absolute right-1/4 top-1/3 h-80 w-80 rounded-full bg-violet-600/[0.05] blur-[100px]" />
@@ -20,7 +20,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-14 text-center lg:mb-16 lg:text-left"
+          className="section-heading text-center lg:text-left"
         >
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-cyan-400/80">
             04 — Projects

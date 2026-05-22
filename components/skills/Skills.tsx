@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative border-t border-white/5 px-4 py-24 sm:px-6 lg:px-10 lg:py-32"
+      className="section-wrap section-wrap-lg-gap relative border-t border-white/5 px-4 sm:px-6 lg:px-10"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-cyan-500/[0.04] blur-[100px]" />
@@ -21,7 +21,7 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-14 text-center lg:mb-16 lg:text-left"
+          className="section-heading text-center lg:text-left"
         >
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-cyan-400/80">
             05 — Skills
@@ -37,7 +37,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-8">
           {SKILL_CATEGORIES.map((category, catIndex) => (
             <motion.div
               key={category.id}

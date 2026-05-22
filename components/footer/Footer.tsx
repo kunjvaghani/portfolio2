@@ -9,7 +9,7 @@ const FOOTER_SOCIAL = [
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/5 bg-[#050508]/80 px-4 py-10 sm:px-6 lg:px-10">
+    <footer className="relative border-t border-white/5 bg-[#050508]/80 px-4 py-8 sm:px-6 lg:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-8">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-start">
           <div className="text-center sm:text-left">

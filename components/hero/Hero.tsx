@@ -66,7 +66,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden px-4 pb-16 pt-28 sm:px-6 lg:px-10 lg:pt-32"
+      className="relative flex min-h-[88dvh] items-center overflow-hidden px-4 pb-10 pt-24 sm:px-6 sm:pb-12 lg:px-10 lg:pt-28"
     >
       {/* Ambient background */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
@@ -75,7 +75,7 @@ export default function Hero() {
         <div className="absolute bottom-0 left-1/2 h-px w-[80%] -translate-x-1/2 bg-gradient-to-r from-transparent via-white/5 to-transparent" />
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-2 lg:gap-10">
         {/* Left — content */}
         <motion.div
           variants={containerVariants}

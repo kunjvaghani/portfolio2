@@ -11,13 +11,6 @@ const CURRENT_FOCUS = [
   "AWS & cloud deployment",
 ];
 
-const WHY_ME = [
-  "Full-stack mindset — from UI polish to production-ready APIs",
-  "Strong AI/ML integration experience beyond basic tutorials",
-  "Clean, maintainable code with modern frameworks",
-  "Fast learner — comfortable picking up new tools for real projects",
-];
-
 const SKILLS_TAGS = [
   "Next.js",
   "React",
@@ -63,11 +56,34 @@ function SectionBlock({
   );
 }
 
+function EducationCard({ index }: { index: number }) {
+  return (
+    <SectionBlock title="Education" index={index}>
+      <div className="rounded-xl border border-white/[0.06] bg-[#0c0c0e]/80 p-4">
+        <p className="font-display text-lg font-semibold text-zinc-100">
+          NIT SURAT
+        </p>
+        <p className="mt-1 text-sm text-cyan-300/90">
+          B.Tech — Computer Science & Engineering
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2 text-xs text-zinc-500">
+          <span className="rounded-md bg-white/[0.04] px-2.5 py-1">
+            Completed 3rd Year
+          </span>
+          <span className="rounded-md bg-white/[0.04] px-2.5 py-1">
+            Expected Graduation: 2027
+          </span>
+        </div>
+      </div>
+    </SectionBlock>
+  );
+}
+
 export default function About() {
   return (
     <section
       id="about"
-      className="relative border-t border-white/5 px-4 py-24 sm:px-6 lg:px-10 lg:py-32"
+      className="section-wrap relative border-t border-white/5 px-4 sm:px-6 lg:px-10"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <div className="absolute right-0 top-1/4 h-80 w-80 rounded-full bg-violet-600/[0.05] blur-[100px]" />
@@ -80,7 +96,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-14 text-center lg:mb-16 lg:text-left"
+          className="section-heading text-center lg:text-left"
         >
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-cyan-400/80">
             03 — About
@@ -93,12 +109,15 @@ export default function About() {
           </h2>
         </motion.div>
 
-        <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
-          {/* Left — profile image */}
-          <AboutProfile />
+        <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10">
+          {/* Left — profile + education */}
+          <div className="flex flex-col gap-5">
+            <AboutProfile />
+            <EducationCard index={2} />
+          </div>
 
-          {/* Right — content */}
-          <div className="flex flex-col gap-6">
+          {/* Right — who am I + current focus */}
+          <div className="flex flex-col gap-5">
             <SectionBlock title="Who am I?" index={0}>
               <div className="mb-4 flex flex-wrap gap-x-4 gap-y-1 font-mono text-sm">
                 <span>
@@ -164,43 +183,6 @@ export default function About() {
                   </li>
                 ))}
               </ul>
-            </SectionBlock>
-
-            {/* <SectionBlock title="Why Me?" index={2}>
-              <ul className="space-y-3">
-                {WHY_ME.map((item) => (
-                  <li
-                    key={item}
-                    className="flex gap-3 text-sm leading-relaxed text-zinc-400 sm:text-base"
-                  >
-                    <span className="mt-0.5 shrink-0 font-mono text-cyan-500/70">
-                      →
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </SectionBlock> */}
-
-            <SectionBlock title="Education" index={3}>
-              <div className="space-y-4">
-                <div className="rounded-xl border border-white/[0.06] bg-[#0c0c0e]/80 p-4">
-                  <p className="font-display text-lg font-semibold text-zinc-100">
-                    NIT SURAT
-                  </p>
-                  <p className="mt-1 text-sm text-cyan-300/90">
-                    B.Tech — Computer Science & Engineering
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-3 text-xs text-zinc-500">
-                    <span className="rounded-md bg-white/[0.04] px-2.5 py-1">
-                      Completed 3rd Year
-                    </span>
-                    <span className="rounded-md bg-white/[0.04] px-2.5 py-1">
-                      Expected Graduation: 2027
-                    </span>
-                  </div>
-                </div>
-              </div>
             </SectionBlock>
           </div>
         </div>
