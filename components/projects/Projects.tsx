@@ -32,10 +32,7 @@ export default function Projects() {
             </span>
           </h2>
           <p className="mt-4 max-w-xl text-sm text-zinc-500 sm:text-base">
-            Dummy projects for now — swap in your real work via{" "}
-            <code className="rounded bg-white/5 px-1.5 py-0.5 font-mono text-xs text-cyan-400/90">
-              lib/projects.ts
-            </code>
+            
           </p>
         </motion.div>
 
