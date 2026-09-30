@@ -81,7 +81,7 @@ export default function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate={isLoaderComplete ? "visible" : "hidden"}
-          className="flex flex-col"
+          className="flex flex-col min-w-0"
         >
           <motion.p
             variants={itemVariants}
@@ -95,7 +95,7 @@ export default function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="font-display text-[clamp(2.75rem,10vw,5.5rem)] font-bold uppercase leading-[0.92] tracking-tighter"
+            className="font-display text-[clamp(2rem,10vw,5.5rem)] font-bold uppercase leading-[0.92] tracking-tighter break-words"
           >
             <span className="bg-gradient-to-br from-white via-zinc-200 to-zinc-500 bg-clip-text text-transparent">
               Kunj

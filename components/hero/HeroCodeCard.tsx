@@ -144,7 +144,7 @@ export default function HeroCodeCard() {
   }, []);
 
   return (
-    <div className="relative w-full max-w-xl lg:max-w-none lg:justify-self-end [perspective:1200px]">
+    <div className="relative w-full min-w-0 max-w-xl lg:max-w-none lg:justify-self-end [perspective:1200px]">
       <div
         ref={glowRef}
         aria-hidden
@@ -174,8 +174,8 @@ export default function HeroCodeCard() {
             </div>
           </div>
 
-          <div className="px-4 py-5 sm:px-5 sm:py-6">
-            <pre className="font-mono text-[11px] leading-[1.75] sm:text-[13px]">
+          <div className="px-4 py-5 sm:px-5 sm:py-6 overflow-hidden">
+            <pre className="overflow-x-auto font-mono text-[11px] leading-[1.75] sm:text-[13px] pb-2">
               <code>
                 {CODE_LINES.map((line, i) => (
                   <motion.div
