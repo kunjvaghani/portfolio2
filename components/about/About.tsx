@@ -132,7 +132,7 @@ export default function About() {
                 <span className="hidden text-zinc-700 sm:inline">|</span>
                 <span>
                   <span className="text-zinc-600">Year:</span>{" "}
-                  <span className="text-zinc-400">Final Year</span>
+                  <span className="text-[#88C0D0]">Final Year</span>
                 </span>
               </div>
               <div className="mb-4 flex flex-wrap gap-2">
