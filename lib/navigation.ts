@@ -14,7 +14,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Contact", href: "#contact", sectionId: "contact" },
   {
     label: "Resume",
-    href: "/resume.pdf",
+    href: "/resume_new.pdf",
     download: true,
   },
 ];

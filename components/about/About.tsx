@@ -68,7 +68,7 @@ function EducationCard({ index }: { index: number }) {
         </p>
         <div className="mt-3 flex flex-wrap gap-2 text-xs text-zinc-500">
           <span className="rounded-md bg-white/[0.04] px-2.5 py-1">
-            Completed 3rd Year
+            Final Year
           </span>
           <span className="rounded-md bg-white/[0.04] px-2.5 py-1">
             Expected Graduation: 2027
@@ -132,7 +132,7 @@ export default function About() {
                 <span className="hidden text-zinc-700 sm:inline">|</span>
                 <span>
                   <span className="text-zinc-600">Year:</span>{" "}
-                  <span className="text-zinc-400">Completed 3rd Year</span>
+                  <span className="text-zinc-400">Final Year</span>
                 </span>
               </div>
               <div className="mb-4 flex flex-wrap gap-2">
